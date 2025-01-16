@@ -1,16 +1,15 @@
+---
+import {TurstedByImages} from '../content/allImges'
+---
 
-
-<div class="px-page-padding border-t border-b border-gray-200">
+<div class="px-page-padding border-t border-b border-gray-200 bg-white">
     <div class=" border-r border-l border-gray-200 py-16">
         <div class="">
             <h1 class="font-geistMono text-center text-lg text-lighterBlue">Trusted by 5000+ marketing professionals</h1>
             <div class="flex justify-around py-5 mt-10">
-                <img src="../assets/features/image1.png" alt="BETA" >
-                <img src="../assets/features/image2.png" alt="incus">
-                <img src="../assets/features/image3.png" alt="UNIVERSE">
-                <img src="../assets/features/image4.png" alt="BLUE SPEC">
-                <img src="../assets/features/image5.png" alt="UNCLE CHARLY">
-                <img src="../assets/features/image6.png" alt="THE CONTAINER">
+                {TurstedByImages.map(({ src, alt } : {src: string, alt: string}) => (
+                  <img src={src} alt={alt} />
+                ))}
             </div>
         </div>
     </div>

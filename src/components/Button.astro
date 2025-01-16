@@ -3,7 +3,7 @@ const {title ,style, icon} = Astro.props
 ---
 
 
-<button class=`h-[40px] w-min-[83px] rounded-xl bg-primary-btn-blue py-[10px] px-[16px] border border-solid-lightBlue btn-outer-dropShadow  btn-inner-dropShadow ${style}`>
-    <p class="text-white text-sm font-semibold">{title}</p>
-    {<icon />}
+<button class=` rounded-xl bg-primary-btn-blue  px-[16px] border border-solid-lightBlue btn-outer-dropShadow  btn-inner-dropShadow ${style}`>
+    <p class="text-white font-semibold">{title}</p>
+    {icon && <span>{<icon/>}</span>}
 </button>
