@@ -1,0 +1,18 @@
+---
+import Button from "./Button.astro";
+import NavItems from "./NavItems";
+import logo from '../assets/logo.png';
+---
+
+<div class="page-padding border border-b border-gray-200 py-4 font-geist">
+    <div class="flex justify-around items-center">
+        <div>
+            <img src={logo} alt="logo" width="160px" height="13px">
+        </div>
+        <NavItems/>
+        <div>
+            <button class="py-[10px] px-[14px] text-darkBlue rounded-[8px] space-x-1 h-[40px] w-[73px] font-semibold text-sm">Log in</button>
+            <Button title="Sign up"/>
+        </div>
+    </div>
+</div>
