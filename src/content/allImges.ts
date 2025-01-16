@@ -11,3 +11,13 @@ export const TurstedByImages: images[] = [
   { src: "../assets/features/image5.png", alt: "UNCLE CHARLY" },
   { src: "../assets/features/image6.png", alt: "THE CONTAINER" },
 ];
+
+
+export const workspaceImages: images[] = [
+  { src: "../assets/features/Frame1.png", alt: "" },
+  { src: "../assets/features/Frame2.png", alt: "" },
+  { src: "../assets/features/Frame3.png", alt: "" },
+  { src: "../assets/features/Frame4.png", alt: "" },
+  { src: "../assets/features/Frame5.png", alt: "" },
+  { src: "../assets/features/Frame6.png", alt: "" },
+]

@@ -1,9 +1,9 @@
 ---
-const {title ,style, icon} = Astro.props
+const {title ,style, icon: Icon} = Astro.props
 ---
 
 
-<button class=` rounded-xl bg-primary-btn-blue  px-[16px] border border-solid-lightBlue btn-outer-dropShadow  btn-inner-dropShadow ${style}`>
+<button class=`h-[40px] w-min-[83px]  rounded-xl bg-primary-btn-blue  px-4  border border-solid-lightBlue btn-outer-dropShadow  btn-inner-dropShadow ${style}`>
     <p class="text-white font-semibold">{title}</p>
-    {icon && <span>{<icon/>}</span>}
+    {Icon && <span class="text-white text-xs space-x-2"><Icon/></span>}
 </button>
