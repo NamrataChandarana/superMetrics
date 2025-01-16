@@ -1,0 +1,24 @@
+---
+import { ChevronDown } from "lucide-react"
+import Button from "./Button.astro"
+---
+
+<div class="p-page-padding">
+    <div class=" w-[617px]">
+        <h1 class="bg-head-text-gradient bg-clip-text text-transparent  font-semibold text-[56px] leading-[74px]">
+            Sync Your Marketing Data to 
+            <span> 
+                <img src="../assets/google.png" alt="">
+            </span>
+        </h1>
+        <p class="font-medium text-md text-lighterBlue text-wrap w-[500px]">With the SuperMetrics Workspace add-on, access all your connected marketing and sales accounts directly in Google Sheets, Slides, and everywhere else.</p>
+        <div class="flex gap-2 my-7">
+            <Button title="Install Now" icon={ChevronDown} style="flex gap-1" />
+            <button class="border border-gray-200 rounded-xl py-[10px] px-[16px] text-darkBlue text-sm">Learn More</button>
+        </div>
+    </div>
+    <div class="relative">
+        <img src="../assets//heroSection//hero-image.jpg" alt="" >
+        <img src="../assets/heroSection/hero-image-2.jpg" alt="">
+    </div>
+</div>

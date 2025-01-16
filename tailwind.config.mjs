@@ -16,7 +16,7 @@ export default {
 		},
 		colors: {
 		  'nav-text': '#42526B',
-		  'primary-head-darkBlue': '#212F40',
+		  'darkBlue': '#212F40',
 		  'primary-btn-blue': '#1B91F0',
 		  lighterBlue: '#697586',
 		  lightBlue: '#344054',
@@ -33,7 +33,7 @@ export default {
 		  'btn-inner-dropShadow': '0px 2px 2px 0px #FFFFFF40, inset 0px 0px 4px 0px #FFFFFF99',
 		},
 		padding: {
-		  'page-padding': '7.0625em',
+		  'page-padding': '7em',
 		},
 	  },
 	},
