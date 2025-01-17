@@ -1,15 +1,16 @@
 ---
 import { ChevronDown, ExternalLink } from "lucide-react"
 import Button from "./Button.astro"
+import googleImg from '../asset/google.png'
+import heroImg1 from '../asset/heroSection/hero-image.jpg'
+import heroImg2 from '../asset/heroSection/hero-image-2.jpg'
+import { Image } from "astro:assets"
 ---
 
-<div class="px-page-padding pt-20">
-    <div class=" w-[617px] pb-32 pt-40">
+<div class="pl-page-padding flex justify-between">
+    <div class=" w-[617px] pb-32 pt-44">
         <h1 class="bg-head-text-gradient bg-clip-text text-transparent font-semibold text-[56px] leading-[74px]">
-            Sync Your Marketing Data to 
-            <span> 
-                <img src="../assets/google.png" alt="">
-            </span>
+            Sync Your Marketing Data to <span><img src={googleImg.src} alt=""class="w-32"></span>
         </h1>
         <p class="font-medium text-md text-lighterBlue text-wrap w-[500px]">With the SuperMetrics Workspace add-on, access all your connected marketing and sales accounts directly in Google Sheets, Slides, and everywhere else.</p>
         <div class="flex gap-2 my-7">
@@ -17,8 +18,8 @@ import Button from "./Button.astro"
             <button class="border border-gray-400 rounded-xl py-[10px] px-6 text-darkBlue text-sm">Learn More</button>
         </div>
     </div>
-    <div class="relative">
-        <img src="../assets//heroSection//hero-image.jpg" alt="" >
-        <img src="../assets/heroSection/hero-image-2.jpg" alt="">
+    <div class="relative mt-28">
+        <Image src={heroImg1} alt="" />
+        <Image src={heroImg2} alt="" class="absolute right-0 top-5"/>
     </div>
 </div>

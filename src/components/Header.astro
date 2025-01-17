@@ -1,13 +1,14 @@
 ---
 import Button from "./Button.astro";
 import NavItems from "./NavItems";
-import logo from '../assets/logo.png';
+import logoImg from '../asset/logo.png';
+import { Image } from "astro:assets";
 ---
 
 <div class="page-padding border border-b border-gray-200 h-[80px] py-5 font-geist">
     <div class="flex justify-around items-center">
         <div>
-            <img src={logo} alt="logo" width="160px" height="13px">
+            <Image src={logoImg} alt="logo" height={260} width={130}/>
         </div>
         <NavItems/>
         <div>

@@ -1,16 +1,18 @@
 ---
 import { workspaceImages } from "../content/allImges"
+import { Image } from "astro:assets";
+import WorkImg from '../asset/google.png'
 ---
 
-<div class="p-page-padding py-20 text-center border-b border-gray-300">
-    <div class="w-full">
-        <div class="pb-12 h-32 w-[602px] text-wrap mx-auto ">
-            <h1 class="text-center text-darkBlue text-4xl  font-semibold ">Access all your marketing data without leaving</h1>
-            <img src="../assets/google.png" alt="">
+<div class="p-page-padding py-20 text-center border-b border-gray-300 h-[547px]">
+    <div class="w-full relative">
+        <div class="pb-12 w-[602px] text-wrap mx-auto ">
+            <h1 class="text-center text-darkBlue text-4xl font-semibold ">Access all your marketing data without leaving</h1>
+            <img src={WorkImg.src} alt="" class="pt-6 pb-14 text-md mx-auto">
         </div>
-        <div class="flex gap-[-3em]">
-            {workspaceImages.map(({src, alt}: {src: string, alt: string}) => (
-                <img src={src} alt={alt} />
+        <div>
+            {workspaceImages.map(({src, alt}, index) => (
+                <img src={src} alt={alt}  class="absolute text-sm h-44" style={{ left: `${182 * index}px`, top: "250px" }} />
             ))}
         </div>
     </div>
