@@ -1,7 +1,15 @@
 ---
+import MainHead from './MainHead.astro';
 import Heading from '../components/Heading.astro'
+import WorkingStepOne from '../components/WorkingStepOne.astro'
 ---
 
-<div>
-    <Heading title="How it Works"/>
+<div class="px-page-padding">
+    <div class="border border-gray-300">
+        <div class="py-20">
+            <Heading title="How it Works"/>
+            <MainHead text="Get Started in 3 Simple Steps" class="pt-5" />
+        </div>  
+        <WorkingStepOne />
+    </div>
 </div>

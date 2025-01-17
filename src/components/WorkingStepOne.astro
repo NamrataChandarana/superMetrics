@@ -1,0 +1,38 @@
+---
+
+import Button from './Button.astro'
+import { Star } from 'lucide-react';
+import { Gem } from 'lucide-react';
+import StepsDetails from './StepsDetails.astro';
+
+---
+
+<div class="h-[342px] flex justify-around mx-auto">
+    <div class="h-80 w-[534px] bg-second-main-gradient rounded-md">
+        <div class="bg-white my-7 mx-9 p-6 rounded-xl space-y-3">
+            <h1 class="text-md text-darkBlue font-bold">SuperMetrics.com</h1>
+            <div class="flex justify-between">
+                <div class="flex gap-1">
+                    <h1 class="font-bold text-darkerBlue text-md">4.9</h1>
+                    <Star class="text-sm "/>
+                    <span class="text-lighterBlue text-md">(2.9k)</span>
+                    <span class="text-lighterBlue text-md">10,000 users</span>
+                </div>
+                <div>
+                    <Button title="Install Now" class="py-2.5 px-6"/>
+                </div>
+            </div>
+            <div class="">
+                <p class="text-md text-green-700 flex gap-2 pb-4"><Gem /> Featured</p>
+                <div class="space-y-3">
+                    <div class="h-2 bg-slate-200 rounded"></div>
+                    <div class="h-2 bg-slate-200 rounded"></div>
+                    <div class="h-2 bg-slate-200 rounded"></div>
+                    <div class="h-2 bg-slate-200 rounded"></div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <StepsDetails />
+</div>

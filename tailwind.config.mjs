@@ -13,8 +13,7 @@ export default {
 		  'text-gradient': 'linear-gradient(180deg, rgba(207, 213, 222, 0.5) 0%, rgba(207, 213, 222, 0) 81.77%)',
 		  'large-text-gradient': 'linear-gradient(0deg, #838E9E, #838E9E), linear-gradient(180deg, rgba(207, 213, 222, 0) -3.1%, #CFD5DE 76.12%)',
 		  'head-text-gradient': 'linear-gradient(180deg, #0D314F 0%, #165182 100%)',
-		  'box-gradient': "linear-gradient(180deg, #E9ECF0 0%, rgba(233, 236, 240, 0) 67.88%)"
-
+		  'head-box-gradient': "linear-gradient(180deg, #E9ECF0 0%, rgba(233, 236, 240, 0) 67.88%)"
 		},
 		colors: {
 		  'nav-text': '#42526B',
